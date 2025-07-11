@@ -1,0 +1,1127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleAdd.css">
+</head>
+
+<body style="overflow-x: hidden;">
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/logo-black.png" class="logo" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown ntk-menu-item" onclick="ntkShowMegaMenu()"
+                                onmouseleave="ntkHideMegaMenu()">
+                                <a class="nav-link dropdown-toggle " class="active" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fonctionnalités
+                                </a>
+                                <div class="ntk-megamenu" id="ntk-megamenu">
+                                    <div class="ntk-megamenu-left">
+                                        <div class="ntk-client active" id="client-button">
+                                            <div class="ntk-client-left">
+                                                <strong>Pour les clients</strong>
+                                                <p>Découvrez comment Neatik simplifie l’entretien des espaces.</p>
+                                            </div>
+                                            <div class="icon-arrow"><img src="assets/img/arrow-left.png"
+                                                    alt="arrow left">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class="ntk-client" id="prestataire-button">
+                                            <div class="ntk-client-left">
+                                                <strong>Pour les prestataires</strong>
+                                                <p>Explorez les outils qui développent votre activité et sécurisent vos
+                                                    revenus.</p>
+                                            </div>
+                                            <div class="icon-arrow"><img src="assets/img/arrow-left.png"
+                                                    alt="arrow left">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ntk-megamenu-right">
+                                        <ul id="client">
+                                            <li class="ntk-client"><strong>Gérer</strong><br>
+                                                <p>Pilotez l’entretien de tous vos espaces depuis une seule interface
+                                                    intuitive</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Trouver</strong><br>
+                                                <p>Accédez à un réseau de prestataires qualifiés</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Négocier</strong><br>
+                                                <p>Définissez votre budget et trouvez les prestataires</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Automatiser</strong><br>
+                                                <p>Synchronisez vos calendriers et programmez automatiquement vos
+                                                    prestations</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Contrôler</strong><br>
+                                                <p>Gardez un œil sur tout & vérifiez la qualité grâce à notre IA</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Communiquer</strong><br>
+                                                <p>Échangez via une messagerie intégrée</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Intégrations</strong><br>
+                                                <p>Connectez Neatik à vos outils favoris pour une gestion sans friction
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul style="display: none" id="prestataire">
+                                            <li class="ntk-client"><strong>Gérer</strong><br>
+                                                <p>Centralisez toute votre activité dans une application mobile
+                                                    intuitive</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Grandir</strong><br>
+                                                <p>Développez votre clientèle grâce à notre marketplace intelligente</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Communiquer</strong><br>
+                                                <p>Echangez au bon moment et en un clic avec vos clients et vos équipes
+                                                </p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Prospérer</strong><br>
+                                                <p>Fixez vos propres tarifs et conditions pour maximiser votre
+                                                    rentabilité</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Organiser</strong><br>
+                                                <p>Optimisez les plannings et les déplacements de toutes vos équipes
+                                                    grâce à
+                                                    l’IA</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Contrôler</strong><br>
+                                                <p>Suivez vos prestations en temps réel et gérez votre réputation</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Facturer</strong><br>
+                                                <p>Automatisez votre facturation et bénéficiez de paiements garantis</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Distribuer</strong><br>
+                                                <p>Calculez automatiquement les gains de vos employés et versez leur dû
+                                                    de
+                                                    multiples façons</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ntk-megamenu-footer">
+                                        <button class="ntk-btn neatik-pro-button">Télécharger Neatik PRO →</button>
+                                        <button class="ntk-btn neatik-client-button">Télécharger Neatik AI →</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown ntk-menu-item-solution" onclick="ntkShowMegaMenuSolution()"
+                                onmouseleave="ntkHideMegaMenuSolution()">
+                                <a class="nav-link dropdown-toggle" class="active" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Solutions
+                                </a>
+                                <div class="ntk-megamenu-solution" id="ntk-megamenu-solution">
+                                    <div class="ntk-megamenu-left">
+                                        <div class="ntk-client active" id="usage-button">
+                                            <div class="ntk-client-left">
+                                                <strong>Par usage</strong>
+                                                <p>L’entretien ménager réinventé pour tous vos besoins</p>
+                                            </div>
+                                            <div class="icon-arrow"><img src="assets/img/arrow-left.png"
+                                                    alt="arrow left">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class="ntk-client" id="profil-button">
+                                            <div class="ntk-client-left">
+                                                <strong>Par profil</strong>
+                                                <p>Quelques uns des profils pour qui Neatik fait la différence</p>
+                                            </div>
+                                            <div class="icon-arrow"><img src="assets/img/arrow-left.png"
+                                                    alt="arrow left">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ntk-megamenu-right">
+                                        <ul id="usage">
+                                            <li class="ntk-client"><strong>Ménage Airbnb</strong><br>
+                                                <p>Simplifiez l'entretien de vos locations saisonnières</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Ménage à
+                                                    domicile</strong><br>
+                                                <p>Améliorez la gestion de l'entretien régulier de votre résidence</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Nettoyage de bureau</strong><br>
+                                                <p>Gérez efficacement l'entretien de vos espaces professionnels</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Ménage événementiel</strong><br>
+                                                <p>Organisez la remise en état parfaite après vos événements</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Entretien copropriété</strong><br>
+                                                <p>Simplifiez la gestion des parties communes de vos immeubles</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Ménage déménagement</strong><br>
+                                                <p>Assurez un état des lieux impeccable pour votre ancien ou nouveau
+                                                    logement</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Homme à tout faire</strong><br>
+                                                <p>Trouvez rapidement des artisans qualifiés pour tous types
+                                                    d'interventions</p>
+                                            </li>
+                                        </ul>
+                                        <ul style="display: none" id="profil">
+                                            <li class="ntk-client"><strong>Loueur Airbnb</strong><br>
+                                                <p>Simplifiez la gestion de vos locations et optimisez votre taux
+                                                    d'occupation</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Propriétaire
+                                                    domicile</strong><br>
+                                                <p>Gérez l'entretien de votre résidence avec les meilleurs prestataires
+                                                </p>
+                                            </li>
+                                            <li class="ntk-client"><strong>PME Nettoyage</strong><br>
+                                                <p>Développez votre activité de nettoyage professionnel avec un outil de
+                                                    gestion complet</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Auto-entrepreneur ménage</strong><br>
+                                                <p>Gérez votre activité indépendante et trouvez de nouveaux clients</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Artisans</strong><br>
+                                                <p>Plombiers, jardiniers, hommes à tout faire… Diversifiez vos
+                                                    prestations
+                                                    et gérez efficacement votre planning</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Femme de ménage</strong><br>
+                                                <p>Faites plus d’heures de ménage et valorisez votre profil auprès de
+                                                    votre
+                                                    employeur</p>
+                                            </li>
+                                            <li class="ntk-client"><strong>Chercheur d’emploi</strong><br>
+                                                <p>Arrondissez vos fins de mois dans le secteur du ménage et des
+                                                    services à
+                                                    domicile</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ntk-megamenu-footer">
+                                        <button class="ntk-btn neatik-pro-button">Télécharger Neatik PRO →</button>
+                                        <button class="ntk-btn neatik-client-button">Télécharger Neatik AI →</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown ntk-menu-item-ressource" onclick="ntkShowMegaMenuRessource()"
+                                onmouseleave="ntkHideMegaMenuRessource()">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Ressources
+                                </a>
+                                <div class="ntk-megamenu-ressource" id="ntk-megamenu-ressource">
+                                    <div class="ntk-megamenu-left">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="title-ressource">Découvrir</div>
+                                                <ul>
+                                                    <li>Blog</li>
+                                                    <li>Centre d’aide</li>
+                                                    <li>À propos de Neatik</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="title-ressource">Services</div>
+                                                <ul>
+                                                    <li>Support client</li>
+                                                    <li>Simulateur rentabilité Airbnb</li>
+                                                    <li>Déclaration revenus Airbnb</li>
+                                                    <li>Intelligence Artificielle</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="title-ressource">Disponibilité</div>
+                                                <ul>
+                                                    <li>Zone Euro francophone</li>
+                                                    <li>Zone Euro (autres pays)</li>
+                                                    <li>Hors Zone Euro (Europe)</li>
+                                                    <li>Amérique & Australie</li>
+                                                    <li>Reste du monde</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ntk-megamenu-right">
+                                        <div class="title-ressource">Autres services phares</div>
+                                        <div class="block-autre">
+                                            <div class="element-ressource">
+                                                <div class="image-ressource"><img src="assets/img/boutique_neatik.png"
+                                                        alt=""></div>
+                                                <div class="desc-ressource">
+                                                    <div class="title-desc-ressource">Boutique Privée</div>
+                                                    <div class="description-desc-ressource">Accédez à des amenities &
+                                                        produits d'entretien de qualité à prix réduits
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-autre">
+                                            <div class="element-ressource">
+                                                <div class="image-ressource"><img src="assets/img/taucupation.png"
+                                                        alt="">
+                                                </div>
+                                                <div class="desc-ressource">
+                                                    <div class="title-desc-ressource">Boost Taux d’occupation</div>
+                                                    <div class="description-desc-ressource">Remplissez votre planning de
+                                                        réservations grâce à notre IA
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ntk-megamenu-footer">
+                                        <button class="ntk-btn">Télécharger Neatik <strong>PRO</strong> →</button>
+                                        <button class="ntk-btn">Télécharger Neatik AI →</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Tarifs</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <button class="btn btn-secondary" style="margin-right: 10px;">Contact commercial</button>
+                            <button class="btn btn-primary">Commencer</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="section-3">
+        <div class="container">
+            <h1>Marketplace Neatik : la nouvelle manière de <br class="desktop-only" /> trouver une femme de
+                ménage
+            </h1>
+            <p class="description" style="padding: 0px 250px;">Trouvez une femme de ménage sérieuse en 2 minutes,
+                partout en France. Neatik vous
+                trouve le prestataire le moins cher, le plus proche et le meilleur profil recommandé par notre IA. Tous,
+                disponibles de suite.
+            </p>
+            <div class="d-flex" style="justify-content: center;column-gap: 10px;">
+                <div class="button">
+                    <img src="./assets/img/icons-prestataires-upload.png" alt="">
+                </div>
+                <div class="button">
+                    <img src="./assets/img/icons-client-upload.png" alt="">
+                </div>
+            </div>
+            <div class="d-flex" style="justify-content: center;margin-top: 20px;">
+                <div class="c-elemt c-img">
+                    <div class="mockup">
+                        <img src="./assets/img/card8.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="compare">
+            <div class="compare-elmnt">
+                <p class="red">Recherche femme de ménage sans Neatik</p>
+                <h1>Cherchez. Espérez. Priez. Recommencez.</h1>
+                <ul>
+                    <li>
+                        <img src="./assets/img/no.png" alt="">
+                        <div><strong>Aucune garantie sur la qualité : </strong> Impossible de savoir si le prestataire
+                            sera à la hauteur.</div>
+                    </li>
+                    <li>
+                        <img src="./assets/img/no.png" alt="">
+                        <div><strong>Tarifs non maîtrisés : </strong> Prix fixé selon le degré d’urgence et de rareté
+                            des prestataires</div>
+                    </li>
+                    <li>
+                        <img src="./assets/img/no.png" alt="">
+                        <div><strong>Stress constant sur le suivi de prestation: </strong> Peur de ce que ça va donner &
+                            de tout réexpliquer une fois de plus</div>
+
+                    </li>
+                    <li>
+                        <img src="./assets/img/no.png" alt="">
+                        <div><strong>Retour à zéro à chaque problème : </strong> Prestataire défaillant ? Recommencez
+                            toute la recherche depuis le début.</div>
+                    </li>
+                </ul>
+            </div>
+            <img src="./assets/img/vs.png" alt="" class="vs">
+            <div class="compare-elmnt mar">
+                <p class="blue">Trouver une femme de ménage via la Marketplace Neatik</p>
+                <h1>Trouvez. Suivez. Réutilisez. Respirez.</h1>
+                <ul>
+                    <li>
+                        <img src="./assets/img/yes.png" alt="">
+                        <div><strong>Historique vérifié par l'IA: </strong> Avis authentifiés, notes analysées et badges
+                            qualité pour choisir en confiance.</div>
+                    </li>
+                    <li>
+                        <img src="./assets/img/yes.png" alt="">
+                        <div><strong>Prix justes et transparents : </strong> Neatik vous affiche le prix de tous les
+                            prestataires disponibles pour le besoin</div>
+                    </li>
+                    <li>
+                        <img src="./assets/img/yes.png" alt="">
+                        <div><strong>Contrôle qualité automatisé :</strong> L’IA de Neatik balise le démarrage et
+                            contrôle chaque prestation sur photos</div>
+
+                    </li>
+                    <li>
+                        <img src="./assets/img/yes.png" alt="">
+                        <div><strong>Main d’œuvre de qualité toujours disponible : </strong> Prestataires testés et
+                            approuvés disponibles instantanément pour vos prochains besoins.
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section-11">
+        <h1 style="text-align: start;">La façon la plus simple et la plus intelligente <br class="desktop-only"> de
+            trouver une femme de ménage
+            fiable</h1>
+        <p class="description">Notre IA analyse votre besoin en 2 minutes et vous propose les meilleures femmes de
+            ménage près de <br class="desktop-only">chez vous, avec des tarifs transparents et une qualité garantie
+        </p>
+        <div class="compare" style="justify-content: space-between;">
+            <div class="c-elemt">
+                <div class="content">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <span class="num">1</span> Décrivez votre besoin
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Votre recherche de femme de ménage commence ici :</strong> Indiquez le type
+                                    de ménage souhaité (domicile, Airbnb, bureau, autre), le lieu de prestation et
+                                    optionnellement votre budget. Notre IA prend immédiatement en compte vos critères
+                                    pour filtrer et sélectionner les meilleures femmes de ménage disponibles dans votre
+                                    secteur.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#two" aria-expanded="false" aria-controls="two">
+                                    <span class="num">2</span> Recevez les résultats optimisés
+
+                                </button>
+                            </h3>
+                            <div id="two" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>L'IA classe les femmes de ménage parfaites pour vous:</strong> Découvrez
+                                    instantanément les résultats organisés par "Recommandé" (meilleur profil selon vos
+                                    critères), "Plus proche" (proximité géographique) et "Moins cher" (meilleur rapport
+                                    qualité-prix). Les tarifs précis s'affichent directement pour votre type de
+                                    prestation.
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#three" aria-expanded="false" aria-controls="three">
+                                    <span class="num">3</span> Patientez si besoin
+
+                                </button>
+                            </h3>
+                            <div id="three" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong> Aucune femme de ménage de qualité ne nous échappe:</strong> Pas de
+                                    résultats dans votre secteur ? Patientez 72h maximum. Nos algorithmes scannent
+                                    continuellement votre zone géographique pour détecter et ajouter tous les profils de
+                                    femmes de ménage qualifiées disponibles, garantissant une couverture optimale.
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#four" aria-expanded="false" aria-controls="four">
+                                    <span class="num">4</span> Réservez et échangez instantanément
+
+                                </button>
+                            </h3>
+                            <div id="four" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>De la sélection au planning en un clic:</strong> Choisissez votre femme de
+                                    ménage idéale et votre prestation s'ajoute automatiquement au planning. Échangez
+                                    directement avec elle via notre chat intégré pour définir les instructions
+                                    spécifiques de votre première intervention.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#five" aria-expanded="false" aria-controls="five">
+                                    <span class="num">5</span> Paiement sécurisé, service 100% gratuit
+                                </button>
+                            </h3>
+                            <div id="five" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Zéro frais pour vous, sécurité maximale pour tous:</strong> Ajoutez votre
+                                    moyen de paiement pour activer la prestation - <strong>rassurez-vous, Neatik est
+                                        entièrement gratuit pour vous</strong>. Nous ne facturons jamais aucun service
+                                    aux clients. Votre moyen de paiement est débité uniquement pour payer au prestataire
+                                    les services effectués et confirmés, garantissant sécurité et tranquillité d'esprit
+                                    à chacun.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary">Voir comment ça marche ></button>
+            </div>
+            <div class="c-elemt c-img gu" style="">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="section-4 " >
+        <div class="container">
+            <h1>
+                Des milliers de femmes de ménage vérifiées <br class="desktop-only" /> partout en France.
+            </h1>
+            <p class="description" style="padding: 0px 280px;">
+                Notre réseau et nos algorithmes permettent de vous proposer plus de 15 000 femmes de ménage
+                rigoureusement sélectionnées et vérifiées par l’IA, couvrant l'ensemble du territoire français, avec une
+                expertise reconnue.
+            </p>
+            <div class="compare" style="column-gap: 7px;">
+                <div class="blck">
+                    <h2>Qualité</h2>
+                    <p>Les profils de tous nos prestataires sont rigoureusement contrôlés par notre IA.</p>
+                    <button class="btn btn-primary">Essayez maintenant</button>
+                </div>
+                <div class="blck">
+                    <h2>Spécialités</h2>
+                    <p>Chaque besoin trouve sa spécialiste : ménage à domicile, nettoyage bureaux, ménage Airbnb,
+                        repassage à domicile, ménage événementiel, nettoyage fin de chantier, etc. </p>
+                    <button class="btn btn-primary">Trouvez maintenant</button>
+                </div>
+                <div class="blck">
+                    <h2>Suivi</h2>
+                    <p>Utilisez Neatik gratuitement pour automatiser le planning et le contrôle qualité.</p>
+                    <button class="btn btn-primary">Automatisez</button>
+                </div>
+                <div class="blck">
+                    <h2>Couverture nationale</h2>
+                    <p>Trouvez votre femme de ménage dans toute la France : Paris, Lyon, Marseille, Nice, Toulouse… et
+                        toutes les grandes villes de France</p>
+                    <button class="btn btn-primary">Essayez</button>
+                </div>
+                <div class="blck">
+                    <h2>Localités</h2>
+                    <p>Toutes les agglomérations françaises sont représentées avec des femmes de ménage locales,
+                        garantissant proximité et disponibilité optimales.</p>
+                    <button class="btn btn-primary">Essayez</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-4 pmb" style="background-color: rgb(236, 239, 254);">
+        <div class="container">
+            <div class="c-blck">
+                <h1>Prestataires de ménage, <br class="desktop-only" /> <span>des clients vous attendent déjà.</span>
+                </h1>
+                <p>Rejoignez des milliers de professionnels qui multiplient leurs revenus grâce à notre marketplace
+                    intelligente.</p>
+                <div>
+                    <div class="d-flex">
+                        <div class="lico">
+                            📈
+                        </div>
+                        <div>
+                            <strong>Des milliers de clients vous cherchent chaque jour</strong>
+                            <p>Accédez à un flux constant d'opportunités sans prospection. Plus de 18 000 demandes de
+                                prestations transitent chaque mois sur notre plateforme.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex">
+                        <div class="lico">
+                            🚀
+                        </div>
+                        <div>
+                            <strong>Zéro prospection, maximum d’opportunités</strong>
+                            <p>Notre IA vous envoie automatiquement les demandes compatibles avec votre profil. Plus vous avez d'aides ménagères dans votre équipe, plus vous recevez d'opportunités.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex">
+                        <div class="lico">
+                            💰
+                        </div>
+                        <div>
+                            <strong>+40% de revenus pour les mieux notés</strong>
+                            <p>Les prestataires les mieux évalués apparaissent en priorité dans les résultats de recherche et reçoivent significativement plus d'opportunités commerciales.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-other">Inscrivez-vous sur Neatik Pro</button>
+                <div class="blck abs"></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="section-11">
+        <h1>Ils ont trouvé leur bonheur sur la marketplace Neatik</h1>
+        <div class="compare apl">
+            <div class="cop">
+                <p>Nettement mieux de passer par cette plateforme plutôt que Facebook pour chercher une femme de ménage pour mes locations.</p>
+                <p>Au moins j’arrive à garder mes équipes de ménage plus longtemps maintenant.</p>
+                <div class="profil">
+                    <div class="p-img">
+                        <img src="./assets/img/person.png" alt="">
+                    </div>
+                    <div class="p-txt">
+                        <strong>Nina Nguyen</strong>
+                        <p>Gérant NetService+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cop">
+                <p>Depuis que je suis sur Neatik, j'ai deux fois plus de clients ! 
+                </p>
+                <p>Avant je galérais à chercher du travail, maintenant c'est l'app qui m'envoie et tout est payé directement. J'ai toujours quelque chose : l'été c'est les Airbnb, l'hiver les maisons. </p>
+                <p>Je recommande à toutes mes copines !</p>
+                <div class="profil">
+                    <div class="p-img">
+                        <img src="./assets/img/person.png" alt="">
+                    </div>
+                    <div class="p-txt">
+                        <strong>Nina Nguyen</strong>
+                        <p>Gérant NetService+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cop">
+                <p>
+                    Je dis Bravo pour le robot qui nous dit si le ménage a été bien fait ou mal fait. Le gain de temps et de tranquillité ??!!!
+                </p>
+                <p>
+                    Je recommande !
+                </p>
+                <div class="profil">
+                    <div class="p-img">
+                        <img src="./assets/img/person.png" alt="">
+                    </div>
+                    <div class="p-txt">
+                        <strong>Nina Nguyen</strong>
+                        <p>Gérant NetService+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-11">
+        <div class="compare" style="justify-content: space-between;">
+            <div class="c-elemt">
+                <h1 style="text-align: start;">FAQs
+                </h1>
+                <p>Besoin de plus d’infos ? <a href="http://" target="_blank" rel="noopener noreferrer">Glissez-nous un
+                        <br class="desktop-only">
+                        mail</a> et nous vous répondons en<br class="desktop-only">
+                    quelques minutes.
+
+                </p>
+            </div>
+            <div class="c-elemt">
+                <div class="content">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Comment trouver une femme de ménage rapidement sur Neatik ?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                                <div class="accordion-body">
+                                    Neatik est bien plus qu’une app de ménage. Neatik accueille tous les professionnels
+                                    de l'entretien et des services à domicile, notamment: <br>
+                                    <ul>
+                                        <li>Les sociétés de nettoyage (de toute taille)</li>
+                                        <li>Les auto-entrepreneurs du ménage</li>
+                                        <li>Les hommes à tout faire et bricoleurs</li>
+                                        <li>Les jardiniers et paysagistes</li>
+                                        <li>Les prestataires spécialisés (vitres, piscines, etc.)</li>
+                                        <li>Les artisans (plombiers, électriciens, serruriers)</li>
+                                    </ul>
+                                    Que vous soyez une entreprise établie avec plusieurs employés ou un indépendant qui
+                                    démarre, Neatik s'adapte à votre
+                                    structure et à vos besoins.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#two" aria-expanded="false" aria-controls="two">
+                                    Est-ce que Neatik est vraiment gratuit pour trouver une femme de ménage ?
+                                </button>
+                            </h3>
+                            <div id="two" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                                <div class="accordion-body">
+                                    Neatik est bien plus qu’une app de ménage. Neatik accueille tous les professionnels
+                                    de l'entretien et des services à domicile, notamment: <br>
+                                    <ul>
+                                        <li>Les sociétés de nettoyage (de toute taille)</li>
+                                        <li>Les auto-entrepreneurs du ménage</li>
+                                        <li>Les hommes à tout faire et bricoleurs</li>
+                                        <li>Les jardiniers et paysagistes</li>
+                                        <li>Les prestataires spécialisés (vitres, piscines, etc.)</li>
+                                        <li>Les artisans (plombiers, électriciens, serruriers)</li>
+                                    </ul>
+                                    Que vous soyez une entreprise établie avec plusieurs employés ou un indépendant qui
+                                    démarre, Neatik s'adapte à votre
+                                    structure et à vos besoins.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#three" aria-expanded="false" aria-controls="three">
+                                    Comment Neatik vérifie-t-elle la qualité des femmes de ménage ?
+                                </button>
+                            </h3>
+                            <div id="three" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Neatik est bien plus qu’une app de ménage. Neatik accueille tous les professionnels
+                                    de l'entretien et des services à domicile, notamment: <br>
+                                    <ul>
+                                        <li>Les sociétés de nettoyage (de toute taille)</li>
+                                        <li>Les auto-entrepreneurs du ménage</li>
+                                        <li>Les hommes à tout faire et bricoleurs</li>
+                                        <li>Les jardiniers et paysagistes</li>
+                                        <li>Les prestataires spécialisés (vitres, piscines, etc.)</li>
+                                        <li>Les artisans (plombiers, électriciens, serruriers)</li>
+                                    </ul>
+                                    Que vous soyez une entreprise établie avec plusieurs employés ou un indépendant qui
+                                    démarre, Neatik s'adapte à votre
+                                    structure et à vos besoins.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#four" aria-expanded="false" aria-controls="four">
+                                   Que se passe-t-il si aucune femme de ménage n'est disponible dans ma zone ?
+                                </button>
+                            </h3>
+                            <div id="four" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Neatik est bien plus qu’une app de ménage. Neatik accueille tous les professionnels
+                                    de l'entretien et des services à domicile, notamment: <br>
+                                    <ul>
+                                        <li>Les sociétés de nettoyage (de toute taille)</li>
+                                        <li>Les auto-entrepreneurs du ménage</li>
+                                        <li>Les hommes à tout faire et bricoleurs</li>
+                                        <li>Les jardiniers et paysagistes</li>
+                                        <li>Les prestataires spécialisés (vitres, piscines, etc.)</li>
+                                        <li>Les artisans (plombiers, électriciens, serruriers)</li>
+                                    </ul>
+                                    Que vous soyez une entreprise établie avec plusieurs employés ou un indépendant qui
+                                    démarre, Neatik s'adapte à votre
+                                    structure et à vos besoins.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br /><br />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+
+    <script>
+
+        // Scroll section-4
+        const scrollBox = document.getElementById("scrollBox");
+
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const scale = 1 + scrollTop / 1000;
+            scrollBox.style.transform = `scale(${scale})`;
+        });
+        //
+        $(document).ready(function () {
+            let currentIndex = 7;
+            const totalBlocs = $('.bloc').length;
+
+            // Activer le premier bloc au chargement
+            $('.bloc[data-index="7"]').addClass('active');
+            $('.contenu-bloc[data-index="7"]').addClass('active');
+
+            // Fonction pour mettre à jour l'affichage avec effet de transition
+            function updateDisplay() {
+                // Mise à jour de l'état actif sur les blocs
+                $('.bloc').removeClass('active');
+                $('.bloc[data-index="' + currentIndex + '"]').addClass('active');
+
+                // Ciblage du bloc actuellement visible
+                const $currentContent = $('.contenu-bloc.active');
+                const $nextContent = $('.contenu-bloc[data-index="' + currentIndex + '"]');
+
+                // Si ce n'est pas déjà le bon contenu, on effectue le changement avec effet
+                if (!$nextContent.is($currentContent)) {
+                    $currentContent.fadeOut(200, function () {
+                        $currentContent.removeClass('active');
+                        $nextContent.fadeIn(200).addClass('active');
+                    });
+                }
+            }
+
+            // Clic sur un bloc
+            $('.bloc').click(function () {
+                currentIndex = parseInt($(this).data('index'));
+                updateDisplay();
+            });
+
+            // Flèche droite
+            $('#arrow-right').click(function () {
+                if (currentIndex < totalBlocs - 1) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0; // Revenir au début si on est à la fin
+                }
+                updateDisplay();
+            });
+
+            // Flèche gauche
+            $('#arrow-left').click(function () {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = totalBlocs - 1; // Aller à la fin si on est au début
+                }
+                updateDisplay();
+            });
+        });
+
+        // Section 9
+        let currentSlide = 0;
+
+        function resetSliderBackground() {
+            $(".testimonial-item").removeClass("deactivated");
+        }
+
+        function updateSlider() {
+            let offset = 0;
+            if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                offset = currentSlide * 101;
+            } else {
+                offset = currentSlide * 61;
+            }
+            $('#testimonialSlider').css('transform', `translateX(-${offset}%)`);
+
+            $('.slide-btn').removeClass('active');
+            $(`.slide-btn[data-slide="${currentSlide}"]`).addClass('active');
+
+            // Met à jour la largeur du fill en fonction du slide
+            $('.slide-btn .fill').css('width', '0%');// reset tout
+            resetSliderBackground();
+            if (currentSlide === 0) {
+                $(".testimonial-item-cover-1").addClass("deactivated");
+            } else if (currentSlide === 1) {
+                $(".testimonial-item-cover-2").addClass("deactivated");
+            } else if (currentSlide === 2) {
+                $(".testimonial-item-cover-3").addClass("deactivated");
+            }
+            if (currentSlide === 0) {
+                $(`.slide-btn[data-slide="0"] .fill`).css('width', '40%');
+            } else if (currentSlide === 1 || currentSlide === 2) {
+                $(`.slide-btn[data-slide="${currentSlide}"] .fill`).css('width', '80%');
+            }
+        }
+
+        $('#nextBtn').on('click', function () {
+            if (currentSlide < 2) {
+                currentSlide++;
+                updateSlider();
+            }
+        });
+
+        $('#prevBtn').on('click', function () {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlider();
+            }
+        });
+
+        $('.slide-btn').on('click', function () {
+            currentSlide = parseInt($(this).data('slide'));
+            updateSlider();
+        });
+
+
+        $('#client-button').on('mouseover', function () {
+            $(this).addClass('active');
+            $("#prestataire-button").removeClass('active'); // corrigé ici
+            $(".neatik-pro-button").removeClass('bold');
+            $(".neatik-client-button").addClass('bold');
+
+            if (!$('#client').is(':visible')) {
+                $("#prestataire").fadeOut(200, function () {
+                    $("#client").fadeIn(200);
+                });
+            }
+        });
+
+        $('#prestataire-button').on('mouseover', function () {
+            $(this).addClass('active');
+            $("#client-button").removeClass('active'); // corrigé ici
+            $(".neatik-pro-button").addClass('bold');
+            $(".neatik-client-button").removeClass('bold');
+
+            if (!$('#prestataire').is(':visible')) {
+                $("#client").fadeOut(200, function () {
+                    $("#prestataire").fadeIn(200);
+                });
+            }
+        });
+
+
+        $('#usage-button').on('mouseover', function () {
+            $(this).addClass('active');
+            $("#profil-button").removeClass('active'); // corrigé ici
+            $(".neatik-pro-button").removeClass('bold');
+            $(".neatik-client-button").addClass('bold');
+            if (!$('#usage').is(':visible')) {
+                $("#profil").fadeOut(200, function () {
+                    $("#usage").fadeIn(200);
+                });
+            }
+        });
+
+        $('#profil-button').on('mouseover', function () {
+            $(this).addClass('active');
+            $("#usage-button").removeClass('active'); // corrigé ici
+            $(".neatik-pro-button").addClass('bold');
+            $(".neatik-client-button").removeClass('bold');
+            if (!$('#profil').is(':visible')) {
+                $("#usage").fadeOut(200, function () {
+                    $("#profil").fadeIn(200);
+                });
+            }
+        });
+
+
+        $('.ntk-megamenu-right .ntk-client').on('mouseover', function () {
+            $(this).find("strong").addClass("colored-violet");
+        });
+
+        $('.ntk-megamenu-right .ntk-client').on('mouseout', function () {
+            $(this).find("strong").removeClass("colored-violet");
+        });
+
+        $('.navbar-nav .nav-item').on('click', function () {
+            $('.navbar-nav .nav-item a').removeClass('colored-violet');
+            $('.navbar-nav .nav-item').css('background', 'transparent');
+            $(this).css({ 'background': 'rgba(241, 244, 255, 1)' });
+            $(this).find("a").addClass("colored-violet");
+        });
+
+        $('.navbar-nav .nav-item .ntk-megamenu').on('mouseleave', function () {
+            const navItem = $(this).closest('.nav-item'); // remonte à l'élément .nav-item parent
+            navItem.css('background', 'transparent'); // change le fond du .nav-item
+            navItem.find('a').first().removeClass('colored-violet'); // enlève la classe sur le premier <a>
+        });
+
+    </script>
+
+    <script>
+        const scrollRow = document.getElementById('scrollRow');
+        const blocks = document.querySelectorAll('.scroll-content > div');
+        const blockWidth = blocks[0].offsetWidth + parseInt(window.getComputedStyle(blocks[0]).marginRight) * 2;
+        let currentIndex = 0;
+
+        // Clone les blocs pour créer l'effet infini
+        function setupInfiniteScroll() {
+            // Clone tous les blocs et les ajoute à la fin
+            blocks.forEach(block => {
+                const clone = block.cloneNode(true);
+                scrollRow.appendChild(clone);
+            });
+
+            // Clone tous les blocs et les ajoute au début
+            blocks.forEach(block => {
+                const clone = block.cloneNode(true);
+                scrollRow.insertBefore(clone, scrollRow.firstChild);
+            });
+
+            // Positionne au début des originaux (après les clones du début)
+            if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                currentIndex = blocks.length + 2.78;
+            } else {
+                currentIndex = blocks.length;
+            }
+            scrollRow.scrollLeft = currentIndex * blockWidth;
+        }
+
+        function scrollRight() {
+            currentIndex++;
+            scrollRow.scrollTo({
+                left: currentIndex * blockWidth,
+                behavior: 'smooth'
+            });
+
+            // Si on arrive à la fin des clones de fin, on saute au début des originaux
+            if (currentIndex >= blocks.length * 2) {
+                setTimeout(() => {
+                    currentIndex = blocks.length;
+                    scrollRow.scrollLeft = currentIndex * blockWidth;
+                }, 500);
+            }
+        }
+
+        function scrollLeft() {
+            currentIndex--;
+            scrollRow.scrollTo({
+                left: currentIndex * blockWidth,
+                behavior: 'smooth'
+            });
+
+            // Si on arrive au début des clones de début, on saute à la fin des originaux
+            if (currentIndex <= 0) {
+                setTimeout(() => {
+                    currentIndex = blocks.length;
+                    scrollRow.scrollLeft = currentIndex * blockWidth;
+                }, 500);
+            }
+        }
+
+        // Initialisation
+        setupInfiniteScroll();
+
+        // Gestion du redimensionnement
+        window.addEventListener('resize', () => {
+            const newBlockWidth = blocks[0].offsetWidth + parseInt(window.getComputedStyle(blocks[0]).marginRight) * 2;
+            if (newBlockWidth !== blockWidth) {
+                scrollRow.scrollLeft = currentIndex * newBlockWidth;
+            }
+        });
+    </script>
+
+    <script>
+        const ntkMenuItem = document.querySelector('.ntk-menu-item');
+        const ntkMenuItemSolution = document.querySelector('.ntk-menu-item-solution');
+        const ntkMenuItemRessource = document.querySelector('.ntk-menu-item-ressource');
+        const ntkMegaMenu = document.getElementById('ntk-megamenu');
+        const ntkMegaMenuSolution = document.getElementById('ntk-megamenu-solution');
+        const ntkMegaMenuRessource = document.getElementById('ntk-megamenu-ressource');
+
+        let ntkTimeout;
+
+        function hideAllMegaMenus() {
+            document.getElementById('ntk-megamenu').style.display = 'none';
+            document.getElementById('ntk-megamenu-solution').style.display = 'none';
+            document.getElementById('ntk-megamenu-ressource').style.display = 'none';
+        }
+
+        function ntkShowMegaMenu() {
+            hideAllMegaMenus();
+            document.getElementById('ntk-megamenu').style.display = 'flex';
+            clearTimeout(ntkTimeout);
+            ntkMenuItem.classList.add('ntk-megamenu-visible');
+        }
+
+        function ntkShowMegaMenuSolution() {
+            hideAllMegaMenus();
+            document.getElementById('ntk-megamenu-solution').style.display = 'flex';
+            clearTimeout(ntkTimeout);
+            ntkMenuItemSolution.classList.add('ntk-megamenu-visible');
+        }
+
+        function ntkShowMegaMenuRessource() {
+            hideAllMegaMenus();
+            document.getElementById('ntk-megamenu-ressource').style.display = 'flex';
+            clearTimeout(ntkTimeout);
+            ntkMenuItemRessource.classList.add('ntk-megamenu-visible');
+        }
+
+        function ntkHideMegaMenu() {
+            ntkTimeout = setTimeout(() => {
+                ntkMenuItem.classList.remove('ntk-megamenu-visible');
+            }, 200);
+            $(document).ready(function () {
+                $('.ntk-menu-item').css('background', 'transparent');
+                $('.ntk-menu-item .nav-link').removeClass('colored-violet');
+            });
+        }
+
+        function ntkHideMegaMenuSolution() {
+            ntkTimeout = setTimeout(() => {
+                ntkMenuItemSolution.classList.remove('ntk-megamenu-visible');
+            }, 200);
+            $(document).ready(function () {
+                $('.ntk-menu-item-solution').css('background', 'transparent');
+                $('.ntk-menu-item-solution .nav-link').removeClass('colored-violet');
+            });
+        }
+
+        function ntkHideMegaMenuRessource() {
+            ntkTimeout = setTimeout(() => {
+                ntkMenuItemRessource.classList.remove('ntk-megamenu-visible');
+            }, 200);
+            $(document).ready(function () {
+                $('.ntk-menu-item-ressource').css('background', 'transparent');
+                $('.ntk-menu-item-ressource .nav-link').removeClass('colored-violet');
+            });
+        }
+
+        ntkMegaMenu.addEventListener('mouseover', () => clearTimeout(ntkTimeout));
+        ntkMegaMenu.addEventListener('mouseleave', ntkHideMegaMenu);
+        ntkMegaMenuSolution.addEventListener('mouseover', () => clearTimeout(ntkTimeout));
+        ntkMegaMenuSolution.addEventListener('mouseleave', ntkHideMegaMenuSolution);
+        ntkMegaMenuRessource.addEventListener('mouseover', () => clearTimeout(ntkTimeout));
+        ntkMegaMenuRessource.addEventListener('mouseleave', ntkHideMegaMenuRessource);
+    </script>
+</body>
+
+</html>

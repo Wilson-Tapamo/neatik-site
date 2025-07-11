@@ -1,0 +1,34 @@
+// === Neatik - Palette de couleurs ===
+
+// Couleurs principales
+$primary: #4B31ED;
+$primary-light: #EDF1FF;
+$primary-dark: #2f2abf;
+
+// Couleurs secondaires
+$secondary: #6f4dfb;
+$accent: #5e3dc8;
+
+// Neutres
+$white: #ffffff;
+$light-gray: #f5f7ff;
+$gray: #e4e7ec;
+$dark-gray: #3f3f3f;
+$text-default: #1f1f1f;
+
+// États
+$hover: #dbe2ff;
+$border-color: #e5e5e5;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+// Gradients (si besoin)
+$gradient-primary: linear-gradient(90deg, #4A3AFF 0%, #6f4dfb 100%);
+
+// Utilitaires
+$box-shadow-default: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+// === Map Bootstrap Override (optionnel)
+$theme-colors: ("primary": $primary,
+    "secondary": $secondary,
+    "light": $light-gray,
+    "dark": $dark-gray);

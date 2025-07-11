@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleAdd.css">
+    <link rel="stylesheet" href="assets/css/tarifCss.css">
+</head>
+
+<body>
+<div class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo-black.png" class="logo" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown ntk-menu-item"  onmouseover="ntkShowMegaMenu()" onmouseleave="ntkHideMegaMenu()">
+                            <a class="nav-link dropdown-toggle " class="active" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Fonctionnalités
+                            </a>
+                            <div class="ntk-megamenu" id="ntk-megamenu" >
+                                <div class="ntk-megamenu-left">
+                                    <div class="ntk-client active" id="client-button">
+                                        <div class="ntk-client-left">
+                                            <strong>Pour les clients</strong>
+                                            <p>Découvrez comment Neatik simplifie l’entretien des espaces.</p>
+                                        </div>
+                                        <div class="icon-arrow"><img src="assets/img/arrow-left.png" alt="arrow left" ></div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="ntk-client" id="prestataire-button">
+                                        <div  class="ntk-client-left">
+                                            <strong>Pour les prestataires</strong>
+                                            <p>Explorez les outils qui développent votre activité et sécurisent vos revenus.</p>
+                                        </div>
+                                        <div class="icon-arrow"><img src="assets/img/arrow-left.png" alt="arrow left" ></div>
+                                    </div>
+                                </div>
+                                <div class="ntk-megamenu-right">
+                                    <ul id="client">
+                                        <li  class="ntk-client"><strong>Gérer</strong><br><p>Pilotez l’entretien de tous vos espaces depuis une seule interface intuitive</p></li>
+                                        <li  class="ntk-client"><strong style="color: #5c47ff;">Trouver</strong><br><p>Accédez à un réseau de prestataires qualifiés</p></li>
+                                        <li  class="ntk-client"><strong>Négocier</strong><br><p>Définissez votre budget et trouvez les prestataires</p></li>
+                                        <li  class="ntk-client"><strong>Automatiser</strong><br><p>Synchronisez vos calendriers et programmez automatiquement vos prestations</p></li>
+                                        <li  class="ntk-client"><strong>Contrôler</strong><br><p>Gardez un œil sur tout & vérifiez la qualité grâce à notre IA</p></li>
+                                        <li  class="ntk-client"><strong>Communiquer</strong><br><p>Échangez via une messagerie intégrée</p></li>
+                                        <li  class="ntk-client"><strong>Intégrations</strong><br><p>Connectez Neatik à vos outils favoris pour une gestion sans friction</p></li>
+                                    </ul>
+                                    <ul style="display: none" id="prestataire">
+                                        <li  class="ntk-client"><strong>Gérer</strong><br><p>Centralisez toute votre activité dans une application mobile intuitive</p></li>
+                                        <li  class="ntk-client"><strong>Grandir</strong><br><p>Développez votre clientèle grâce à notre marketplace intelligente</p></li>
+                                        <li  class="ntk-client"><strong>Communiquer</strong><br><p>Echangez au bon moment et en un clic avec vos clients et vos équipes</p></li>
+                                        <li  class="ntk-client"><strong style="color: #5c47ff;">Prospérer</strong><br><p>Fixez vos propres tarifs et conditions pour maximiser votre rentabilité</p></li>
+                                        <li  class="ntk-client"><strong>Organiser</strong><br><p>Optimisez les plannings et les déplacements de toutes vos équipes grâce à l’IA</p></li>
+                                        <li  class="ntk-client"><strong>Contrôler</strong><br><p>Suivez vos prestations en temps réel et gérez votre réputation</p></li>
+                                        <li  class="ntk-client"><strong>Facturer</strong><br><p>Automatisez votre facturation et bénéficiez de paiements garantis</p></li>
+                                        <li  class="ntk-client"><strong>Distribuer</strong><br><p>Calculez automatiquement les gains de vos employés et versez leur dû de multiples façons</p></li>
+                                    </ul>
+                                </div>
+                                <div class="ntk-megamenu-footer">
+                                    <button class="ntk-btn">Télécharger Neatik <strong>PRO</strong> →</button>
+                                    <button class="ntk-btn">Télécharger Neatik AI →</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown ntk-menu-item-solution"   onmouseover="ntkShowMegaMenuSolution()" onmouseleave="ntkHideMegaMenuSolution()">
+                            <a class="nav-link dropdown-toggle" class="active" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Solutions
+                            </a>
+                            <div class="ntk-megamenu-solution" id="ntk-megamenu-solution" >
+                                <div class="ntk-megamenu-left">
+                                    <div class="ntk-client active" id="usage-button">
+                                        <div class="ntk-client-left">
+                                            <strong>Par usage</strong>
+                                            <p>L’entretien ménager réinventé pour tous vos besoins</p>
+                                        </div>
+                                        <div class="icon-arrow"><img src="assets/img/arrow-left.png" alt="arrow left" ></div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="ntk-client" id="profil-button">
+                                        <div  class="ntk-client-left">
+                                            <strong>Par profil</strong>
+                                            <p>Quelques uns des profils pour qui Neatik fait la différence</p>
+                                        </div>
+                                        <div class="icon-arrow"><img src="assets/img/arrow-left.png" alt="arrow left" ></div>
+                                    </div>
+                                </div>
+                                <div class="ntk-megamenu-right">
+                                    <ul id="usage">
+                                        <li  class="ntk-client"><strong>Ménage Airbnb</strong><br><p>Simplifiez l'entretien de vos locations saisonnières</p></li>
+                                        <li  class="ntk-client"><strong style="color: #5c47ff;">Ménage à domicile</strong><br><p>Améliorez la gestion de l'entretien régulier de votre résidence</p></li>
+                                        <li  class="ntk-client"><strong>Nettoyage de bureau</strong><br><p>Gérez efficacement l'entretien de vos espaces professionnels</p></li>
+                                        <li  class="ntk-client"><strong>Ménage événementiel</strong><br><p>Organisez la remise en état parfaite après vos événements</p></li>
+                                        <li  class="ntk-client"><strong>Entretien copropriété</strong><br><p>Simplifiez la gestion des parties communes de vos immeubles</p></li>
+                                        <li  class="ntk-client"><strong>Ménage déménagement</strong><br><p>Assurez un état des lieux impeccable pour votre ancien ou nouveau logement</p></li>
+                                        <li  class="ntk-client"><strong>Homme à tout faire</strong><br><p>Trouvez rapidement des artisans qualifiés pour tous types d'interventions</p></li>
+                                    </ul>
+                                    <ul style="display: none" id="profil">
+                                        <li  class="ntk-client"><strong>Loueur Airbnb</strong><br><p>Simplifiez la gestion de vos locations et optimisez votre taux d'occupation</p></li>
+                                        <li  class="ntk-client"><strong style="color: #5c47ff;">Propriétaire domicile</strong><br><p>Gérez l'entretien de votre résidence avec les meilleurs prestataires</p></li>
+                                        <li  class="ntk-client"><strong>PME Nettoyage</strong><br><p>Développez votre activité de nettoyage professionnel avec un outil de gestion complet</p></li>
+                                        <li  class="ntk-client"><strong>Auto-entrepreneur ménage</strong><br><p>Gérez votre activité indépendante et trouvez de nouveaux clients</p></li>
+                                        <li  class="ntk-client"><strong>Artisans</strong><br><p>Plombiers, jardiniers, hommes à tout faire… Diversifiez vos prestations et gérez efficacement votre planning</p></li>
+                                        <li  class="ntk-client"><strong>Femme de ménage</strong><br><p>Faites plus d’heures de ménage et valorisez votre profil auprès de votre employeur</p></li>
+                                        <li  class="ntk-client"><strong>Chercheur d’emploi</strong><br><p>Arrondissez vos fins de mois dans le secteur du ménage et des services à domicile</p></li>
+                                    </ul>
+                                </div>
+                                <div class="ntk-megamenu-footer">
+                                    <button class="ntk-btn">Télécharger Neatik <strong>PRO</strong> →</button>
+                                    <button class="ntk-btn">Télécharger Neatik AI →</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown ntk-menu-item-ressource"   onmouseover="ntkShowMegaMenuRessource()" onmouseleave="ntkHideMegaMenuRessource()">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Ressources
+                            </a>
+                            <div class="ntk-megamenu-ressource" id="ntk-megamenu-ressource" >
+                                <div class="ntk-megamenu-left">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="title-ressource">Découvrir</div>
+                                            <ul>
+                                                <li>Blog</li>
+                                                <li>Centre d’aide</li>
+                                                <li>À propos de Neatik</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="title-ressource">Services</div>
+                                            <ul>
+                                                <li>Support client</li>
+                                                <li>Simulateur rentabilité Airbnb</li>
+                                                <li>Déclaration revenus Airbnb</li>
+                                                <li>Intelligence Artificielle</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="title-ressource">Disponibilité</div>
+                                            <ul>
+                                                <li>Zone Euro francophone</li>
+                                                <li>Zone Euro (autres pays)</li>
+                                                <li>Hors Zone Euro (Europe)</li>
+                                                <li>Amérique & Australie</li>
+                                                <li>Reste du monde</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ntk-megamenu-right">
+                                    <div class="title-ressource">Autres services phares</div>
+                                    <div class="block-autre">
+                                        <div class="element-ressource">
+                                            <div class="image-ressource"><img src="assets/img/boutique_neatik.png" alt=""></div>
+                                            <div class="desc-ressource">
+                                                <div class="title-desc-ressource">Boutique Privée</div>
+                                                <div class="description-desc-ressource">Accédez à des amenities & produits d'entretien de qualité à prix réduits</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-autre">
+                                        <div class="element-ressource">
+                                            <div class="image-ressource"><img src="assets/img/taucupation.png" alt=""></div>
+                                            <div class="desc-ressource">
+                                                <div class="title-desc-ressource">Boost Taux d’occupation</div>
+                                                <div class="description-desc-ressource">Remplissez votre planning de réservations grâce à notre IA</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ntk-megamenu-footer">
+                                    <button class="ntk-btn">Télécharger Neatik <strong>PRO</strong> →</button>
+                                    <button class="ntk-btn">Télécharger Neatik AI →</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Tarifs</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <img src="./assets/img/icons-prestataires-upload.png" class="icon-upload" alt="img">
+                        <img src="./assets/img/icons-client-upload.png" class="icon-upload" alt="img">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="section-1 tarif-1">
+    <div class="container py-5 text-center">
+        <div class="mb-4">
+            <h1 class="fw-bold title">Tout simplement<br><strong>gratuit.</strong></h1>
+            <p class="text-muted mx-auto description" style="max-width: 430px; font-weight: 600" >
+                Accédez à toute la puissance de Neatik gratuitement. L’utilisation de l’application est 100% gratuite, à vie.<br>
+                Grâce à la technologie Neatik, clients et prestataires disposent de toutes les fonctionnalités pour simplifier l’entretien de tous types de biens.
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="row g-4 justify-content-center" >
+            <div class="col-md-4">
+                <div class="card border-0 shadow h-100" style="background-color: #fce2f2; border-radius: 25px 25px 25px 25px; overflow: hidden;">
+                    <img src="assets/img/marketplace.png" class="card-img-top rounded-top zoomCenter" alt="Marketplace"  >
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Marketplace</h5>
+                        <p class="card-text flex-grow-1">Trouvez le prestataire ou le <br> client qui vous correspond en
+                            <br> un clic.</p>
+                        <a href="#" class="btn btn-primary mt-3 button-card">Utilisez. C’est gratuit.</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow h-100" style="background-color: #d9f4e4; border-radius: 25px 25px 25px 25px; overflow: hidden;">
+                    <img src="assets/img/automatisation.png" class="card-img-top rounded-top zoomCenter" alt="Automatisation">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Automatisation</h5>
+                        <p class="card-text flex-grow-1">Gagnez des heures <br> de productivité grâce au suivi <br>automatique.</p>
+                        <a href="#" class="btn btn-primary mt-3 button-card">Utilisez. C’est gratuit.</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow h-100" style="background-color: #e0f4fb;  border-radius: 25px 25px 25px 25px; overflow: hidden;">
+                    <img src="assets/img/intelligence.png" class="card-img-top rounded-top zoomCenter" alt="Intelligence Artificielle">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Intelligence artificielle</h5>
+                        <p class="card-text flex-grow-1">Laissez l’IA contrôler la qualité, <br> optimiser les plannings,
+                            <br> booster votre business…</p>
+                        <a href="#" class="btn btn-primary mt-3 button-card">Utilisez. C’est gratuit.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section-remuneration">
+    <div class="container">
+        <h2 class="fw-bold display-6">Comment Neatik se rémunère</h2>
+        <br>
+        <br>
+        <div class="remuneration-columns mt-4">
+            <div class="col">
+                <p class="block1">Nous dégageons une marge lorsque vous achetez des produits sur la boutique privée.</p>
+                <br>
+                <a href="#">En savoir plus ›</a>
+            </div>
+            <div class="col">
+                <p class="block2">Nous prélevons aux prestataires des frais de transactions lorsque nous traitons leurs opérations financières.</p>
+                <br>
+                <a href="#">En savoir plus ›</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-faq">
+    <div class="container">
+        <h2 class="fw-bold display-6">Foire aux questions</h2>
+        <br>
+        <p class="subtitle">
+            Trouvez réponses aux questions généralement posées au sujet du coût d'utilisation <br>de Neatlik.
+            Et n’hésitez pas à <a href="#">nous contacter</a> si vous ne trouvez pas ce que vous cherchez.
+        </p>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>Est-ce que l’app Neatlik est vraiment gratuite ?</h3>
+                    <p>Oui, l'application Neatik est 100% gratuite pour les clients. Vous ne payez que les prestations que vous commandez, sans frais d'abonnement ni coûts cachés.</p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>Y a-t-il des fonctionnalités payantes sur Neatik ? </h3>
+                    <p>? Non, toutes les fonctionnalités de Neatik sont gratuites. Seules les prestations commandées auprès des prestataires et les produits achetés dans notre boutique en ligne sont payants.</p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>Quel taux de commission Neatik prélève sur les transactions des prestataires ? </h3>
+                    <p>Neatik prélève une commission de 5% sur chaque transaction financière générée par les prestataires via la plateforme. Cette commission rémunère les services de mise en relation, de facturation et de paiement.</p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>Qui fixe le prix des prestations commandées sur Neatik ? </h3>
+                    <p>C'est vous qui définissez votre budget pour chaque prestation. Si vous n’avez pas déjà de prestataire attitré, notre technologie vous connecte avec des prestataires qualifiés prêts à travailler dans les conditions tarifaires que vous avez fixées.</p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>En tant que prestataire, puis-je répercuter la commission Neatik sur les clients ? </h3>
+                    <p>Oui, vous êtes libre de définir vos tarifs comme vous le souhaitez. Neatik vous informe simplement du montant que le client est prêt à payer, et vous décidez si vous acceptez cette offre.</p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>En tant que client, est-ce payant d'intégrer mes prestataires dans l'app ?</h3>
+                    <p>Non, vous pouvez gratuitement intégrer tous vos prestataires actuels dans Neatik pour centraliser la gestion de vos services.</p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>En tant que prestataire, est-ce payant d'intégrer mes clients dans l'app ?</h3>
+                    <p>Non, vous pouvez importer gratuitement tous vos clients existants. La commission de 5% ne s'applique que sur les transactions effectuées via la plateforme.</p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>Est-ce que je paie des frais si j'annule une prestation ?</h3>
+                    <p>Les conditions d'annulation dépendent des termes convenus entre vous et votre prestataire. Neatik n'applique pas de frais d'annulation supplémentaires.</p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>Peut-on gagner de l'argent en utilisant Neatik ? </h3>
+                    <p>Pour les prestataires, Neatik est un outil pour développer votre activité et trouver de nouveaux clients. Pour les clients, l'application vous permet d'optimiser vos dépenses et d’améliorer votre rentabilité si vous avez une activité commerciale.</p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>Quels moyens de paiement sont acceptés sur Neatik ? </h3>
+                    <p>Neatik accepte les cartes bancaires (Visa, Mastercard, American Express), les paiements par Apple Pay et Google Pay, ainsi que les prélèvements SEPA et les virements bancaires, sous certaines conditions. </p>
+                </div>
+            </div>
+            <div class="col-md-4  col-6">
+                <div class="faq-card">
+                    <h3>L'app Neatik sera-t-elle toujours gratuite ? </h3>
+                    <p>Oui, notre modèle économique est conçu pour maintenir l'application gratuite pour tous les utilisateurs, à vie. Nous nous rémunérons uniquement lorsque nous traitons des transactions financières pour les prestataires.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+</script>
+
+</body>
+</html>
